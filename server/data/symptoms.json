@@ -1,10 +1,101 @@
-{
-  "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
+[
+  {
+    "id": 3001,
+    "userId": 1,
+    "answers": {
+      "headache": false,
+      "swelling": true,
+      "vision": false,
+      "abdominalPain": false,
+      "nausea": true
+    },
+    "riskLevel": "MODERATE",
+    "riskScore": 3,
+    "title": "🌱 Let's Keep an Eye on This",
+    "message": "Some of your symptoms may need a little attention.",
+    "action": "Monitor your symptoms and rest when you can.",
+    "color": "#d97706",
+    "recommendations": [
+      "Elevate your feet when resting and avoid standing for long periods.",
+      "Eat small, frequent meals and avoid spicy or greasy foods."
+    ],
+    "reportedSymptoms": ["swelling", "nausea"],
+    "date": "2026-03-19",
+    "time": "09:15:00",
+    "createdAt": "2026-03-19T09:15:00Z"
+  },
+  {
+    "id": 3002,
+    "userId": 2,
+    "answers": {
+      "headache": false,
+      "swelling": false,
+      "vision": false,
+      "abdominalPain": false,
+      "nausea": true
+    },
+    "riskLevel": "LOW",
+    "riskScore": 1,
+    "title": "💚 You're Doing Great",
+    "message": "Your responses suggest mild symptoms that are common in pregnancy.",
+    "action": "Keep up the great work taking care of yourself!",
+    "color": "#15803d",
+    "recommendations": [
+      "Continue with your regular self-care routine."
+    ],
+    "reportedSymptoms": ["nausea"],
+    "date": "2026-03-18",
+    "time": "14:30:00",
+    "createdAt": "2026-03-18T14:30:00Z"
+  },
+  {
+    "id": 3003,
+    "userId": 3,
+    "answers": {
+      "headache": true,
+      "swelling": true,
+      "vision": true,
+      "abdominalPain": false,
+      "nausea": false
+    },
+    "riskLevel": "HIGH",
+    "riskScore": 7,
+    "title": "🌸 Time to Check In",
+    "message": "Based on your responses, we think it's a good idea to speak with your healthcare provider soon.",
+    "action": "Please contact your doctor or midwife within the next 24 hours.",
+    "color": "#b91c1c",
+    "recommendations": [
+      "Rest in a quiet, dark room and stay hydrated.",
+      "Elevate your feet when resting and avoid standing for long periods.",
+      "Note any vision changes and mention them to your provider."
+    ],
+    "reportedSymptoms": ["headache", "swelling", "vision"],
+    "date": "2026-03-18",
+    "time": "11:45:00",
+    "createdAt": "2026-03-18T11:45:00Z"
+  },
+  {
+    "id": 3004,
+    "userId": 1,
+    "answers": {
+      "headache": false,
+      "swelling": false,
+      "vision": false,
+      "abdominalPain": false,
+      "nausea": false
+    },
+    "riskLevel": "LOW",
+    "riskScore": 0,
+    "title": "💚 You're Doing Great",
+    "message": "Your responses suggest mild symptoms that are common in pregnancy.",
+    "action": "Keep up the great work taking care of yourself!",
+    "color": "#15803d",
+    "recommendations": [
+      "Continue with your regular self-care routine."
+    ],
+    "reportedSymptoms": [],
+    "date": "2026-03-17",
+    "time": "10:00:00",
+    "createdAt": "2026-03-17T10:00:00Z"
   }
-}
+]

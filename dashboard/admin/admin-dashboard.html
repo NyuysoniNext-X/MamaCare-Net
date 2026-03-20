@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard – MamaCare Network</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header class="mh-header">
+    <div class="mh-container mh-nav">
+        <div class="mh-logo">
+            <img src="../../img/logo.png" alt="MamaCare Network logo" onerror="this.style.display='none'">
+            <span>MamaCare Network</span>
+        </div>
+        <nav class="mh-nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="../../contact.html">Contact</a>
+            <button id="logoutBtn" class="mh-logout-btn" style="display: none;">Logout</button>
+        </nav>
+    </div>
+</header>
+
+<section class="mh-section">
+    <div class="mh-container">
+        <h1 class="mh-section-title">👨‍💼 Admin Dashboard</h1>
+        <p class="mh-section-lead">System overview, analytics, and user management.</p>
+
+        <!-- Stats Grid -->
+        <div class="mh-stats-grid">
+            <div class="mh-stat-card">
+                <span class="mh-stat-number" id="totalUsers">0</span>
+                <span class="mh-stat-label">Total Users</span>
+            </div>
+            <div class="mh-stat-card">
+                <span class="mh-stat-number" id="totalMothers">0</span>
+                <span class="mh-stat-label">Mothers</span>
+            </div>
+            <div class="mh-stat-card">
+                <span class="mh-stat-number" id="totalNurses">0</span>
+                <span class="mh-stat-label">Nurses</span>
+            </div>
+            <div class="mh-stat-card">
+                <span class="mh-stat-number" id="totalHospitals">0</span>
+                <span class="mh-stat-label">Hospitals</span>
+            </div>
+        </div>
+
+        <!-- Charts -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px; margin:40px 0;">
+            <div class="mh-dashboard-card">
+                <h3>User Distribution</h3>
+                <canvas id="usersChart" style="height:300px;"></canvas>
+            </div>
+            <div class="mh-dashboard-card">
+                <h3>Platform Activity</h3>
+                <canvas id="activityChart" style="height:300px;"></canvas>
+            </div>
+        </div>
+
+        <!-- User Management -->
+        <div class="mh-dashboard-card">
+            <h3>📋 User Management</h3>
+            <table class="mh-table">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Joined</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody id="usersTable">
+                <tr>
+                    <td colspan="6" style="text-align:center;">Loading users...</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<footer class="mh-footer">
+    <div class="mh-container">
+        <p>© 2026 MamaCare Network. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="../../js/auth.js"></script>
+<script src="../../js/admin-dashboard.js"></script>
+</body>
+</html>

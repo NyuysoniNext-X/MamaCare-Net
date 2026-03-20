@@ -1,10 +1,86 @@
-{
-  "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
+[
+  {
+    "id": 1001,
+    "userId": 1,
+    "week": 24,
+    "bp": "118/76",
+    "weight": 68.5,
+    "notes": "Feeling good today! Baby is very active.",
+    "insight": "Corn size! Baby's lungs are developing rapidly.",
+    "date": "2026-03-19",
+    "time": "10:30:00",
+    "createdAt": "2026-03-19T10:30:00Z"
+  },
+  {
+    "id": 1002,
+    "userId": 1,
+    "week": 23,
+    "bp": "120/78",
+    "weight": 67.8,
+    "notes": "Had a slight headache but it went away.",
+    "insight": "Baby's hearing is improving.",
+    "date": "2026-03-12",
+    "time": "14:15:00",
+    "createdAt": "2026-03-12T14:15:00Z"
+  },
+  {
+    "id": 1003,
+    "userId": 1,
+    "week": 22,
+    "bp": "115/75",
+    "weight": 66.9,
+    "notes": "Ultrasound today! Baby looks perfect.",
+    "insight": "Papaya size. Baby's eyebrows are visible.",
+    "date": "2026-03-05",
+    "time": "09:45:00",
+    "createdAt": "2026-03-05T09:45:00Z"
+  },
+  {
+    "id": 1004,
+    "userId": 2,
+    "week": 20,
+    "bp": "122/80",
+    "weight": 72.3,
+    "notes": "Feeling the baby move! Such a special moment.",
+    "insight": "Banana size. HALFWAY THERE! Baby is more active.",
+    "date": "2026-03-18",
+    "time": "11:20:00",
+    "createdAt": "2026-03-18T11:20:00Z"
+  },
+  {
+    "id": 1005,
+    "userId": 2,
+    "week": 19,
+    "bp": "118/78",
+    "weight": 71.5,
+    "notes": "Good checkup today. Everything is on track.",
+    "insight": "Mango size. Baby can swallow now.",
+    "date": "2026-03-11",
+    "time": "15:30:00",
+    "createdAt": "2026-03-11T15:30:00Z"
+  },
+  {
+    "id": 1006,
+    "userId": 3,
+    "week": 28,
+    "bp": "145/92",
+    "weight": 75.1,
+    "notes": "Concerned about swelling and headache.",
+    "insight": "Eggplant size. Third trimester begins! Baby can blink.",
+    "date": "2026-03-18",
+    "time": "13:45:00",
+    "createdAt": "2026-03-18T13:45:00Z"
+  },
+  {
+    "id": 1007,
+    "userId": 3,
+    "week": 27,
+    "bp": "138/88",
+    "weight": 73.8,
+    "notes": "Some swelling in feet but otherwise okay.",
+    "insight": "Cauliflower size. Baby has sleep-wake cycles.",
+    "date": "2026-03-11",
+    "time": "10:00:00",
+    "createdAt": "2026-03-11T10:00:00Z"
   }
-}
+]

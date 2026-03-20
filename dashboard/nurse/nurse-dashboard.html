@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurse Dashboard – MamaCare Network</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="mh-header">
+    <div class="mh-container mh-nav">
+        <div class="mh-logo">
+            <img src="../../img/logo.png" alt="MamaCare Network logo" onerror="this.style.display='none'">
+            <span>🌸 MamaCare Network</span>
+        </div>
+        <nav class="mh-nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="../../contact.html">Contact</a>
+            <button id="logoutBtn" class="mh-logout-btn" style="display: none;">Logout</button>
+        </nav>
+    </div>
+</header>
+
+<section class="mh-section">
+    <div class="mh-container">
+        <h1 class="mh-section-title">👩‍⚕️ Nurse Dashboard</h1>
+        <p class="mh-section-lead">Welcome, <span id="nurseName">Nurse</span>. Monitor patient vitals and recent assessments.</p>
+
+        <!-- Stats Grid -->
+        <div class="mh-stats-grid">
+            <div class="mh-stat-card">
+                <span class="mh-stat-number" id="totalPatients">0</span>
+                <span class="mh-stat-label">Total Patients</span>
+                <p class="mh-stat-text">Active mothers under care</p>
+            </div>
+            <div class="mh-stat-card">
+                <span class="mh-stat-number" id="todayAssessments">0</span>
+                <span class="mh-stat-label">Today's Assessments</span>
+                <p class="mh-stat-text">Symptom checks completed</p>
+            </div>
+            <div class="mh-stat-card">
+                <span class="mh-stat-number" id="highRiskPatients">0</span>
+                <span class="mh-stat-label">High Risk</span>
+                <p class="mh-stat-text">Need immediate attention</p>
+            </div>
+        </div>
+
+        <!-- Patient List -->
+        <div class="mh-dashboard-card">
+            <h3>📋 Recent Patient Assessments</h3>
+            <table class="mh-table">
+                <thead>
+                <tr>
+                    <th>Patient</th>
+                    <th>Week</th>
+                    <th>BP</th>
+                    <th>Weight</th>
+                    <th>Last Check</th>
+                    <th>Risk Level</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody id="patientsTable">
+                <tr>
+                    <td colspan="7" style="text-align:center;">Loading patient data...</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Symptom Alerts -->
+        <div class="mh-dashboard-card" style="margin-top:30px;">
+            <h3>🚨 Recent Symptom Alerts</h3>
+            <div id="alertsList"></div>
+        </div>
+    </div>
+</section>
+
+<footer class="mh-footer">
+    <div class="mh-container">
+        <p>© 2026 MamaCare Network. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="../../js/auth.js"></script>
+<script src="../../js/nurse-dashboard.js"></script>
+</body>
+</html>

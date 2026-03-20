@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Dashboard – MamaCare Network</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header class="mh-header">
+    <div class="mh-container mh-nav">
+        <div class="mh-logo">
+            <img src="../../img/logo.png" alt="MamaCare Network logo" onerror="this.style.display='none'">
+            <span>MamaCare Network</span>
+        </div>
+        <nav class="mh-nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="../../contact.html">Contact</a>
+            <button id="logoutBtn" class="mh-logout-btn" style="display: none;">Logout</button>
+        </nav>
+    </div>
+</header>
+
+<section class="mh-section">
+    <div class="mh-container">
+        <h1 class="mh-section-title">🏥 Hospital Dashboard</h1>
+        <p class="mh-section-lead">Welcome, <span id="hospitalName">City General Hospital</span>. Monitor patient data and risk analytics.</p>
+
+        <!-- Stats Grid -->
+        <div class="mh-stats-grid">
+            <div class="mh-stat-card">
+                <span class="mh-stat-number" id="totalMothers">0</span>
+                <span class="mh-stat-label">Total Mothers</span>
+                <p class="mh-stat-text">Active patients</p>
+            </div>
+            <div class="mh-stat-card">
+                <span class="mh-stat-number" id="highRiskCount">0</span>
+                <span class="mh-stat-label">High Risk</span>
+                <p class="mh-stat-text">Need immediate attention</p>
+            </div>
+            <div class="mh-stat-card">
+                <span class="mh-stat-number" id="moderateRiskCount">0</span>
+                <span class="mh-stat-label">Moderate Risk</span>
+                <p class="mh-stat-text">Need monitoring</p>
+            </div>
+            <div class="mh-stat-card">
+                <span class="mh-stat-number" id="lowRiskCount">0</span>
+                <span class="mh-stat-label">Low Risk</span>
+                <p class="mh-stat-text">Stable patients</p>
+            </div>
+        </div>
+
+        <!-- Charts -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px; margin:40px 0;">
+            <div class="mh-dashboard-card">
+                <h3>Risk Distribution</h3>
+                <canvas id="riskChart" style="height:300px;"></canvas>
+            </div>
+            <div class="mh-dashboard-card">
+                <h3>Weekly Assessments</h3>
+                <canvas id="trendsChart" style="height:300px;"></canvas>
+            </div>
+        </div>
+
+        <!-- Recent Symptoms Table -->
+        <div class="mh-dashboard-card">
+            <h3>📋 Recent Symptom Checks</h3>
+            <table class="mh-table">
+                <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Patient</th>
+                    <th>Symptoms</th>
+                    <th>Risk Level</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody id="symptomsTable">
+                <tr>
+                    <td colspan="5" style="text-align:center;">Loading data...</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- High Risk Patients -->
+        <div class="mh-dashboard-card" style="margin-top:30px;">
+            <h3>🚨 High Risk Patients</h3>
+            <div id="highRiskList"></div>
+        </div>
+    </div>
+</section>
+
+<footer class="mh-footer">
+    <div class="mh-container">
+        <p>© 2026 MamaCare Network. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="../../js/auth.js"></script>
+<script src="../../js/hospital-dashboard.js"></script>
+</body>
+</html>

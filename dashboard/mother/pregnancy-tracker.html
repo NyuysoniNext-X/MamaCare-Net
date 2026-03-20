@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregnancy Tracker – MamaCare Network</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="mh-header">
+    <div class="mh-container mh-nav">
+        <div class="mh-logo">
+            <img src="../../img/logo.png" alt="MamaCare Network logo" onerror="this.style.display='none'">
+            <span>MamaCare Network</span>
+        </div>
+        <nav class="mh-nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="../../contact.html">Contact</a>
+            <div class="mh-dropdown">
+                <button class="mh-btn-login">My Tools</button>
+                <div class="mh-dropdown-content">
+                    <a href="symptom-checker.html">🌸 Symptom Checker</a>
+                    <a href="pregnancy-tracker.html" class="active">👶 Pregnancy Tracker</a>
+                    <a href="baby-tracker.html">🍼 Baby Tracker</a>
+                </div>
+            </div>
+            <button id="logoutBtn" class="mh-logout-btn" style="display: none;">Logout</button>
+        </nav>
+    </div>
+</header>
+
+<section class="mh-section">
+    <div class="mh-container">
+        <div class="mh-checker-card">
+            <h1 class="mh-checker-title">🌸 Your Pregnancy Journey</h1>
+            <p class="mh-checker-intro">
+                Track your baby's growth, your vital signs, and special moments week by week.
+                Every step of your journey is unique and beautiful.
+            </p>
+
+            <!-- Current Week Display -->
+            <div id="currentWeekDisplay" class="mh-progress" style="margin-bottom:30px; display:block; text-align:center;">
+                Week 24 of 40
+            </div>
+
+            <!-- Input Form -->
+            <div style="max-width:500px; margin:0 auto;">
+                <div class="mh-input-group">
+                    <label>Pregnancy Week</label>
+                    <input type="number" id="week" class="mh-input" placeholder="e.g., 24" min="1" max="42">
+                </div>
+
+                <div class="mh-input-group">
+                    <label>Blood Pressure</label>
+                    <input type="text" id="bp" class="mh-input" placeholder="e.g., 120/80">
+                </div>
+
+                <div class="mh-input-group">
+                    <label>Weight (kg)</label>
+                    <input type="number" id="weight" class="mh-input" placeholder="e.g., 68.5" step="0.1">
+                </div>
+
+                <div class="mh-input-group">
+                    <label>Notes (Optional)</label>
+                    <textarea id="notes" class="mh-input" rows="3" placeholder="How are you feeling today?"></textarea>
+                </div>
+
+                <button onclick="savePregnancyRecord()" class="mh-btn mh-btn-primary" style="width:100%;">💾 Save This Week's Record</button>
+            </div>
+
+            <!-- Records List -->
+            <div id="recordsContainer" style="margin-top:40px; display:none;">
+                <h2 style="margin-bottom:20px;">📋 Your Saved Records</h2>
+                <div id="recordsList"></div>
+            </div>
+
+            <p class="mh-checker-note">
+                Your data is stored safely and privately. You can always come back to review your journey.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer class="mh-footer">
+    <div class="mh-container">
+        <p>© 2026 MamaCare Network. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="../../js/auth.js"></script>
+<script src="../../js/pregnancy-tracker.js"></script>
+</body>
+</html>

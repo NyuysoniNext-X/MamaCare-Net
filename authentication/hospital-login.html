@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Login – MamaCare Network</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body style="background: linear-gradient(135deg, #ede9fe, #ddd6fe); min-height:100vh; display:flex; align-items:center;">
+<div class="mh-form-card" style="margin:20px auto;">
+  <h1 class="mh-form-title">🏥 Hospital Login</h1>
+  <p class="mh-form-subtitle">Access your facility dashboard and patient insights.</p>
+
+  <div class="mh-input-group">
+    <label>Email Address</label>
+    <input type="email" id="email" class="mh-input" placeholder="Enter work email">
+  </div>
+
+  <div class="mh-input-group">
+    <label>Password</label>
+    <input type="password" id="password" class="mh-input" placeholder="Enter password">
+  </div>
+
+  <div class="mh-input-group">
+    <label>Facility ID</label>
+    <input type="text" id="facilityId" class="mh-input" placeholder="Enter facility ID">
+  </div>
+
+  <button onclick="login('hospital')" class="mh-btn" style="width:100%; background:#7c3aed; color:white; padding:14px; border:none; border-radius:15px; font-weight:600;">Log In</button>
+
+  <div id="error" class="mh-alert mh-alert-error" style="display:none; margin-top:20px;"></div>
+</div>
+<script src="../js/auth.js"></script>
+</body>
+</html>

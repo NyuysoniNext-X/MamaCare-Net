@@ -1,10 +1,74 @@
-{
-  "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
+[
+  {
+    "id": 2001,
+    "userId": 1,
+    "activity": "feeding",
+    "feedingType": "breast",
+    "duration": 25,
+    "notes": "Good feeding, both sides",
+    "icon": "🍼",
+    "title": "Feeding - breast",
+    "date": "2026-03-19",
+    "time": "08:30:00",
+    "createdAt": "2026-03-19T08:30:00Z"
+  },
+  {
+    "id": 2002,
+    "userId": 1,
+    "activity": "sleep",
+    "sleepDuration": 3.5,
+    "notes": "Slept well after feeding",
+    "icon": "😴",
+    "title": "Slept for 3.5 hours",
+    "date": "2026-03-19",
+    "time": "12:15:00",
+    "createdAt": "2026-03-19T12:15:00Z"
+  },
+  {
+    "id": 2003,
+    "userId": 1,
+    "activity": "diaper",
+    "diaperType": "wet",
+    "notes": "Normal wet diaper",
+    "icon": "🧷",
+    "title": "Diaper change - wet",
+    "date": "2026-03-19",
+    "time": "10:45:00",
+    "createdAt": "2026-03-19T10:45:00Z"
+  },
+  {
+    "id": 2004,
+    "userId": 1,
+    "activity": "feeding",
+    "feedingType": "breast",
+    "duration": 20,
+    "notes": "Shorter feeding but satisfied",
+    "icon": "🍼",
+    "title": "Feeding - breast",
+    "date": "2026-03-18",
+    "time": "22:30:00",
+    "createdAt": "2026-03-18T22:30:00Z"
+  },
+  {
+    "id": 2005,
+    "userId": 1,
+    "activity": "milestone",
+    "notes": "First smile!",
+    "icon": "✨",
+    "title": "New milestone",
+    "date": "2026-03-18",
+    "time": "16:20:00",
+    "createdAt": "2026-03-18T16:20:00Z"
+  },
+  {
+    "id": 2006,
+    "userId": 1,
+    "activity": "bath",
+    "notes": "Loved bath time today",
+    "icon": "🛁",
+    "title": "Bath time",
+    "date": "2026-03-17",
+    "time": "19:00:00",
+    "createdAt": "2026-03-17T19:00:00Z"
   }
-}
+]

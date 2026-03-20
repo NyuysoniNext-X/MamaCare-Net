@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Johnson",
+    "email": "mother@example.com",
+    "password": "$2a$10$8uUq5qX5qX5qX5qX5qX5qO5qX5qX5qX5qX5qX5qX5qX5qX5qX5q",
+    "role": "mother",
+    "status": "active",
+    "dueDate": "2026-06-15",
+    "weeksPregnant": 24,
+    "createdAt": "2026-01-15T10:30:00Z",
+    "lastLogin": "2026-03-19T14:20:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Maria Garcia",
+    "email": "maria.g@example.com",
+    "password": "$2a$10$8uUq5qX5qX5qX5qX5qX5qO5qX5qX5qX5qX5qX5qX5qX5qX5qX5q",
+    "role": "mother",
+    "status": "active",
+    "dueDate": "2026-07-22",
+    "weeksPregnant": 20,
+    "createdAt": "2026-02-03T09:15:00Z",
+    "lastLogin": "2026-03-18T11:30:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Lisa Chen",
+    "email": "lisa.c@example.com",
+    "password": "$2a$10$8uUq5qX5qX5qX5qX5qX5qO5qX5qX5qX5qX5qX5qX5qX5qX5qX5q",
+    "role": "mother",
+    "status": "active",
+    "dueDate": "2026-05-30",
+    "weeksPregnant": 28,
+    "createdAt": "2026-01-22T14:45:00Z",
+    "lastLogin": "2026-03-19T09:10:00Z"
+  },
+  {
+    "id": 4,
+    "name": "Nurse Johnson",
+    "email": "nurse@cityhospital.com",
+    "password": "$2a$10$8uUq5qX5qX5qX5qX5qX5qO5qX5qX5qX5qX5qX5qX5qX5qX5qX5q",
+    "role": "nurse",
+    "status": "active",
+    "employeeId": "NURSE001",
+    "department": "Maternity",
+    "hospital": "City General Hospital",
+    "createdAt": "2026-01-10T09:00:00Z",
+    "lastLogin": "2026-03-19T08:30:00Z"
+  },
+  {
+    "id": 5,
+    "name": "Nurse Williams",
+    "email": "k.williams@cityhospital.com",
+    "password": "$2a$10$8uUq5qX5qX5qX5qX5qX5qO5qX5qX5qX5qX5qX5qX5qX5qX5qX5q",
+    "role": "nurse",
+    "status": "active",
+    "employeeId": "NURSE002",
+    "department": "NICU",
+    "hospital": "City General Hospital",
+    "createdAt": "2026-01-22T11:20:00Z",
+    "lastLogin": "2026-03-18T16:45:00Z"
+  },
+  {
+    "id": 6,
+    "name": "City General Hospital",
+    "email": "hospital@citycare.com",
+    "password": "$2a$10$8uUq5qX5qX5qX5qX5qX5qO5qX5qX5qX5qX5qX5qX5qX5qX5qX5q",
+    "role": "hospital",
+    "status": "active",
+    "facilityId": "HOSP001",
+    "address": "123 Main St, Cityville",
+    "phone": "(555) 123-4567",
+    "createdAt": "2026-01-05T11:00:00Z",
+    "lastLogin": "2026-03-19T10:15:00Z"
+  },
+  {
+    "id": 7,
+    "name": "St. Mary's Hospital",
+    "email": "admin@stmarys.com",
+    "password": "$2a$10$8uUq5qX5qX5qX5qX5qX5qO5qX5qX5qX5qX5qX5qX5qX5qX5qX5q",
+    "role": "hospital",
+    "status": "pending",
+    "facilityId": "HOSP002",
+    "address": "456 Oak Ave, Townsville",
+    "phone": "(555) 987-6543",
+    "createdAt": "2026-03-01T13:30:00Z",
+    "lastLogin": null
+  },
+  {
+    "id": 8,
+    "name": "Admin User",
+    "email": "admin@mamacare.com",
+    "password": "$2a$10$8uUq5qX5qX5qX5qX5qX5qO5qX5qX5qX5qX5qX5qX5qX5qX5qX5q",
+    "role": "admin",
+    "status": "active",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "lastLogin": "2026-03-19T09:30:00Z"
+  }
+]

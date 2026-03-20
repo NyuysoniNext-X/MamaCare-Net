@@ -1,10 +1,41 @@
 {
-  "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
+  "name": "mamacare-network-server",
+  "version": "1.0.0",
+  "description": "MamaCare Network - Maternal Health Platform Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node_modules/.bin/nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node scripts/seed-data.js"
+  },
+  "keywords": [
+    "maternal-health",
+    "pregnancy",
+    "healthcare",
+    "ai",
+    "node",
+    "express"
+  ],
+  "author": "MamaCare Network",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "express-validator": "^7.0.1",
+    "nodemailer": "^6.9.5",
+    "helmet": "^7.0.0",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0",
+    "express-rate-limit": "^7.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mother Login – MamaCare Network</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body style="background: linear-gradient(135deg, #fce4ec, #f8bbd0); min-height:100vh; display:flex; align-items:center;">
+<div class="mh-form-card" style="margin:20px auto;">
+  <h1 class="mh-form-title">Mama you are welcome back</h1>
+  <p class="mh-form-subtitle">Log in to continue your pregnancy journey.</p>
+
+  <div class="mh-input-group">
+    <label>Email Address</label>
+    <input type="email" id="email" class="mh-input" placeholder="Enter your email">
+  </div>
+
+  <div class="mh-input-group">
+    <label>Password</label>
+    <input type="password" id="password" class="mh-input" placeholder="Enter your password">
+  </div>
+
+  <button onclick="login('mother')" class="mh-btn" style="width:100%; background:#e83e8c; color:white; padding:14px; border:none; border-radius:15px; font-weight:600;">Log In</button>
+
+  <div style="text-align:center; margin-top:20px;">
+    <a href="#" style="color:#e83e8c;">Forgot Password?</a>
+  </div>
+
+  <div style="text-align:center; margin-top:10px;">
+    New here? <a href="signup.html">Create an account</a>
+  </div>
+
+  <div id="error" class="mh-alert mh-alert-error" style="display:none; margin-top:20px;"></div>
+
+  </div>
+
+<script src=".. /js/auth.js"></script>
+</body>
+</html>

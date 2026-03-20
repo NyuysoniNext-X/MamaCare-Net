@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker – MamaCare Network</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<header class="mh-header">
+    <div class="mh-container mh-nav">
+        <div class="mh-logo">
+            <img src="../../img/logo.png" alt="MamaCare Network logo" onerror="this.style.display='none'">
+            <span>MamaCare Network</span>
+        </div>
+        <nav class="mh-nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="../../contact.html">Contact</a>
+            <div class="mh-dropdown">
+                <button class="mh-btn-login">My Tools</button>
+                <div class="mh-dropdown-content">
+                    <a href="symptom-checker.html" class="active">🌸 Symptom Checker</a>
+                    <a href="pregnancy-tracker.html">👶 Pregnancy Tracker</a>
+                    <a href="baby-tracker.html">🍼 Baby Tracker</a>
+                </div>
+            </div>
+            <button id="logoutBtn" class="mh-logout-btn" style="display: none;">Logout</button>
+        </nav>
+    </div>
+</header>
+
+<section class="mh-section">
+    <div class="mh-container">
+        <div class="mh-checker-card">
+            <h1 class="mh-checker-title">🌸 Symptom Checker</h1>
+            <p class="mh-checker-intro">
+                This gentle, step-by-step check helps you reflect on symptoms that may need attention during pregnancy.
+                It does not diagnose conditions, but it can help you understand when it may be important
+                to speak with your healthcare provider.
+            </p>
+
+            <!-- Progress -->
+            <div id="progress" class="mh-progress">Question 1 of 5</div>
+
+            <!-- Question -->
+            <h2 id="question" class="mh-question">Loading question...</h2>
+            <p id="description" class="mh-desc"></p>
+
+            <!-- Buttons -->
+            <div class="mh-checker-buttons">
+                <button id="yesBtn" class="mh-btn mh-btn-primary" style="min-width:120px;">Yes</button>
+                <button id="noBtn" class="mh-btn mh-btn-outline" style="min-width:120px;">No</button>
+            </div>
+
+            <!-- Result -->
+            <div id="result" style="display:none;"></div>
+
+            <p class="mh-checker-note">
+                Your responses are not saved. This tool is for awareness only.
+                Always consult your healthcare provider for medical advice.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer class="mh-footer">
+    <div class="mh-container">
+        <p>© 2026 MamaCare Network. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="../../js/auth.js"></script>
+<script src="../../js/symptom-checker.js"></script>
+</body>
+</html>
