@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "builds": [
     {
       "src": "client/**",
@@ -7,8 +8,48 @@
   ],
   "routes": [
     {
+      "src": "/css/(.*)",
+      "dest": "/client/css/$1"
+    },
+    {
+      "src": "/js/(.*)",
+      "dest": "/client/js/$1"
+    },
+    {
+      "src": "/img/(.*)",
+      "dest": "/client/img/$1"
+    },
+    {
+      "src": "/authentication/(.*)",
+      "dest": "/client/authentication/$1"
+    },
+    {
+      "src": "/dashboard/admin/(.*)",
+      "dest": "/client/dashboard/admin/$1"
+    },
+    {
+      "src": "/dashboard/hospital/(.*)",
+      "dest": "/client/dashboard/hospital/$1"
+    },
+    {
+      "src": "/dashboard/mother/(.*)",
+      "dest": "/client/dashboard/mother/$1"
+    },
+    {
+      "src": "/dashboard/nurse/(.*)",
+      "dest": "/client/dashboard/nurse/$1"
+    },
+    {
+      "src": "/(.*)\\.html",
+      "dest": "/client/$1.html"
+    },
+    {
+      "src": "/",
+      "dest": "/client/index.html"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/client/$1"
+      "dest": "/client/index.html"
     }
   ]
 }
