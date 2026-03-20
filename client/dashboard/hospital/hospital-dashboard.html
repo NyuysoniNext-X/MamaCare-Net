@@ -53,12 +53,17 @@
 
         <!-- Charts -->
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px; margin:40px 0;">
-            <div class="mh-dashboard-card">
-                <h3>Risk Distribution</h3>
-                <canvas id="riskChart" style="height:300px;"></canvas>
+            <div class="mh-dashboard-card" style="height: 450px;">
+                <h3>Risk Distribution</h3><br>
+                <div class="chart-wrapper" >
+                    <canvas id="riskChart"></canvas>
+                </div>
             </div>
-            <div class="mh-dashboard-card">
+            <div class="mh-dashboard-card" style="height: 450px;">
                 <h3>Weekly Assessments</h3>
+                <div class="chart-wrapper">
+                    <canvas id="trendsChart"></canvas>
+                </div>
                 <canvas id="trendsChart" style="height:300px;"></canvas>
             </div>
         </div>

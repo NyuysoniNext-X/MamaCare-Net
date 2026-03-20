@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurse Login – MamaCare Network</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); min-height:100vh; display:flex; align-items:center;">
+<div class="mh-form-card" style="margin:20px auto;">
+    <h1 class="mh-form-title">👩‍⚕️ Nurse Login</h1>
+    <p class="mh-form-subtitle">Access patient records and care management tools.</p>
+
+    <div class="mh-input-group">
+        <label>Work Email</label>
+        <input type="email" id="email" class="mh-input" placeholder="Enter your work email">
+    </div>
+
+    <div class="mh-input-group">
+        <label>Password</label>
+        <input type="password" id="password" class="mh-input" placeholder="Enter your password">
+    </div>
+
+    <div class="mh-input-group">
+        <label>Employee ID</label>
+        <input type="text" id="employeeId" class="mh-input" placeholder="Enter your employee ID">
+    </div>
+
+    <button onclick="login('nurse')" class="mh-btn" style="width:100%; background:#2563eb; color:white; padding:14px; border:none; border-radius:15px; font-weight:600; cursor:pointer;">Log In</button>
+
+    <div id="error" class="mh-alert mh-alert-error" style="display:none; margin-top:20px;"></div>
+</div>
+
+<script src="/js/auth.js"></script>
+</body>
+</html>

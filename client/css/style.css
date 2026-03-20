@@ -454,6 +454,13 @@ body {
     box-shadow: var(--shadow-md);
 }
 
+.mh-dashboard-card-1 {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+}
+
 .mh-dashboard-card h3 {
     color: var(--deep-navy);
     margin-bottom: var(--spacing-md);
@@ -651,4 +658,9 @@ body {
     .mh-tab {
         width: 100%;
     }
+}
+
+.chart-wrapper {
+    height: 300px;
+    position: relative;
 }
